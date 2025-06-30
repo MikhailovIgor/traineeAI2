@@ -1,0 +1,181 @@
+.tableContainer {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.userTable {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 15px;
+  background: #fff;
+}
+
+.userTable thead tr {
+  border-bottom: 1px solid #ececec;
+}
+
+.userTable th {
+  background: #fff;
+  color: #a0aec0;
+  padding: 18px 12px 12px 12px;
+  text-align: left;
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+}
+
+.userTable td {
+  padding: 18px 12px 18px 12px;
+  border-bottom: 1px solid #f3f3f3;
+  vertical-align: middle;
+  background: #fff;
+}
+
+.tableRow {
+  transition: background 0.15s;
+  cursor: pointer;
+}
+
+.tableRow:hover {
+  background: #f7f8fa;
+}
+
+.tableRow:last-child td {
+  border-bottom: none;
+}
+
+/* Name/Email Column */
+.nameEmailCell {
+  min-width: 200px;
+}
+
+.nameEmail {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.name {
+  font-weight: 700;
+  color: #222;
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+
+.email {
+  color: #7b8794;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+/* Address Column */
+.addressCell {
+  min-width: 180px;
+  color: #444;
+  font-size: 15px;
+}
+
+.address {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Phone Column */
+.phoneCell {
+  min-width: 140px;
+}
+
+.phoneLink {
+  color: #444;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.phoneLink:hover {
+  text-decoration: underline;
+}
+
+/* Website Column */
+.websiteCell {
+  min-width: 120px;
+}
+
+.websiteLink {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+  word-break: break-all;
+}
+
+.websiteLink:hover {
+  text-decoration: underline;
+}
+
+/* Company Column */
+.companyCell {
+  min-width: 160px;
+  color: #444;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.companyName {
+  font-weight: 500;
+  color: #222;
+  font-size: 15px;
+}
+
+/* Actions Column */
+.actionsCell {
+  min-width: 60px;
+  text-align: right;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0;
+}
+
+.deleteBtn {
+  background: none;
+  border: none;
+  color: #ef4444;
+  font-size: 22px;
+  cursor: pointer;
+  padding: 0 8px;
+  line-height: 1;
+  transition: color 0.15s;
+}
+
+.deleteBtn:hover {
+  color: #b91c1c;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .userTable {
+    font-size: 14px;
+  }
+  .name {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tableContainer {
+    overflow-x: auto;
+  }
+  .userTable {
+    min-width: 800px;
+  }
+} 

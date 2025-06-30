@@ -1,0 +1,89 @@
+/* Button styles */
+.btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btnPrimary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.btnPrimary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+
+.btnSecondary {
+  background: #e2e8f0;
+  color: #4a5568;
+}
+
+.btnSecondary:hover {
+  background: #cbd5e0;
+  transform: translateY(-1px);
+}
+
+.btnView {
+  background: #4299e1;
+  color: white;
+  padding: 8px 12px;
+  font-size: 12px;
+}
+
+.btnEdit {
+  background: #f6ad55;
+  color: white;
+  padding: 8px 12px;
+  font-size: 12px;
+}
+
+.btnDelete {
+  background: #f56565;
+  color: white;
+  padding: 8px 12px;
+  font-size: 12px;
+}
+
+.btnClose {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #718096;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.btnClose:hover {
+  background: #f7fafc;
+  color: #2d3748;
+}
+
+.btnRetry {
+  background: #48bb78;
+  color: white;
+}
+
+.btnDismiss {
+  background: #a0aec0;
+  color: white;
+}
+
+/* Responsive button styles */
+@media (max-width: 768px) {
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+} 

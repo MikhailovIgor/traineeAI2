@@ -1,0 +1,167 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.modalContent {
+  background: #fff;
+  border-radius: 18px;
+  max-width: 420px;
+  width: 100%;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.18);
+  animation: slideIn 0.3s ease-out;
+  position: relative;
+  padding: 0 0 32px 0;
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 0;
+  margin: 0;
+}
+
+.closeBtn {
+  background: none;
+  border: none;
+  color: #222;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 18px 18px 0 0;
+  line-height: 1;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  transition: color 0.15s;
+}
+.closeBtn:hover {
+  color: #ef4444;
+}
+
+.modalBody {
+  padding: 36px 36px 0 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.userName {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 2px;
+  margin-top: 0;
+}
+
+.userEmail {
+  color: #2563eb;
+  font-size: 1.08rem;
+  font-weight: 500;
+  margin-bottom: 18px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.sectionTitle {
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 8px;
+  margin-top: 0;
+}
+
+.addressBlock, .contactBlock, .companyBlock {
+  margin-bottom: 0;
+}
+
+.addressLine {
+  color: #444;
+  font-size: 1rem;
+  margin-bottom: 2px;
+}
+
+.mapLink {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.mapPin {
+  color: #ef4444;
+  font-size: 1.1em;
+}
+
+.mapAnchor {
+  color: #ef4444;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 1em;
+}
+.mapAnchor:hover {
+  text-decoration: underline;
+}
+
+.contactLabel {
+  font-weight: 600;
+  color: #222;
+  margin-right: 4px;
+}
+
+.contactValue {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.companyLabel {
+  font-weight: 600;
+  color: #222;
+  margin-right: 4px;
+}
+
+.companyValue {
+  color: #444;
+  font-weight: 400;
+}
+
+.companyCatchphrase {
+  color: #7b8794;
+  font-style: italic;
+  margin-bottom: 2px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(-20px) scale(0.97); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@media (max-width: 600px) {
+  .modalContent {
+    max-width: 98vw;
+    padding: 0 0 18px 0;
+  }
+  .modalBody {
+    padding: 24px 12px 0 12px;
+    gap: 24px;
+  }
+  .userName {
+    font-size: 1.3rem;
+  }
+} 

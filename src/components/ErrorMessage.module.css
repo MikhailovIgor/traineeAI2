@@ -1,0 +1,30 @@
+.errorMessage {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 20px;
+  background: #fed7d7;
+  border: 1px solid #feb2b2;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+.errorIcon {
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.errorContent {
+  flex: 1;
+}
+
+.errorText {
+  color: #c53030;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.errorActions {
+  display: flex;
+  gap: 12px;
+} 

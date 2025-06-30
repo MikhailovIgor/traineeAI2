@@ -1,0 +1,10 @@
+{
+  "entryPoints": ["src/"],
+  "out": "docs",
+  "includeVersion": true,
+  "exclude": ["**/*.test.ts", "**/*.test.tsx"],
+  "excludePrivate": true,
+  "excludeProtected": true,
+  "excludeExternals": true,
+  "tsconfig": "tsconfig.json"
+} 
